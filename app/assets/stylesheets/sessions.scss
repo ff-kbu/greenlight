@@ -43,7 +43,7 @@ a.signin-link {
   .signin-button {
     background: white;
     width: 250px;
-    border: thin solid #888;
+    border: thin solid $signin-button-gray;
     border-radius: 2px;
     white-space: nowrap;
     padding: 5px;
@@ -61,6 +61,6 @@ a.signin-link {
     vertical-align: middle;
     font-size: 14px;
     font-weight: bold;
-    color: #444;
+    color: $signin-text-gray;
   }
 }

@@ -43,13 +43,13 @@
   div {
     width: 100%;
     height: 16px;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid $light-gray;
     text-align: center;
     span {
       font-size: 120%;
       background-color: #ffffff;
       padding: 0 10px;
-      color: #d3d3d3
+      color: $light-gray;
     }
   }
 }
@@ -61,9 +61,9 @@
 .customBtn {
   display: block;
   text-align: center;
-  background: #cccccc;
+  background: $mid-gray;
   color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+  box-shadow: 0 2px 4px 0 $transparent-gray;
   -webkit-transition: background-color .218s,border-color .218s,box-shadow .218s;
   transition: background-color .218s,border-color .218s,box-shadow .218s;
   white-space: nowrap;
@@ -73,8 +73,8 @@
   &:hover {
     cursor: pointer;
     color: #ffffff;
-    -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
-    box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+    -webkit-box-shadow: 0 0 3px 3px $transparent-blue;
+    box-shadow: 0 0 3px 3px $transparent-blue;
   }
 
   .customBtn-icon {
@@ -102,7 +102,7 @@
 
 .customBtn-google {
   @extend .customBtn;
-  background: #4688f1;
+  background: $google-button-blue;
 
   .customBtn-image {
     background: #ffffff image-url("google-logo.png") no-repeat left top;
@@ -113,7 +113,7 @@
 
 .customBtn-twitter {
   @extend .customBtn;
-  background: #1da1f2;
+  background: $twitter-button-blue;
 
   .customBtn-image {
     background: #ffffff image-url("twitter-logo.png") no-repeat left top;
@@ -124,7 +124,7 @@
 
 .customBtn-office365 {
   @extend .customBtn;
-  background: #f65314;
+  background: $office356-button-red;
 
   .customBtn-image {
     background: #ffffff image-url("office365-logo.jpeg") no-repeat left top;
@@ -135,7 +135,7 @@
 
 .customBtn-microsoft_windows {
   @extend .customBtn;
-  background: #00a1f1;
+  background: $ms-button-blue;
 
   .customBtn-image {
     background: #ffffff image-url("windows-logo.png") no-repeat left top;
@@ -146,7 +146,7 @@
 
 .customBtn-ldap {
   @extend .customBtn;
-  background: #d61515;
+  background: $ldap-button-red;
 
   .customBtn-image {
     background: #ffffff image-url("ldap-logo.png") no-repeat left top;

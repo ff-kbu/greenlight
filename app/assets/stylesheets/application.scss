@@ -121,7 +121,7 @@ a {
 }
 
 .force-text-normal {
-  color: #495057;
+  color: $force-text-normal-color;
 }
 
 .terms {
@@ -138,6 +138,7 @@ a {
   background-color: $button-color-blue;
   #cookies-agree-button {
     margin: 0;
+    background-color: $cookies-agree-button-background !important;
   }
 }
 
@@ -178,4 +179,14 @@ table {
 
 #delete-confirm:disabled {
   cursor: not-allowed;
+}
+
+// Freifunk Buttons are magenta
+.bg-primary {
+  color: $freifunk-magenta;
+}
+.alert-danger {
+  background-color: $freifunk-yellow;
+  border-bottom-color: $freifunk-yellow;
+  color: black;
 }

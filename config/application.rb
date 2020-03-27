@@ -108,15 +108,15 @@ module Greenlight
     config.pagination_rows = ENV['NUMBER_OF_ROWS'].to_i.zero? ? 25 : ENV['NUMBER_OF_ROWS'].to_i
 
     # Whether the user has defined the variables required for recaptcha
-    config.recaptcha_enabled = ENV['RECAPTCHA_SITE_KEY'].present? && ENV['RECAPTCHA_SECRET_KEY'].present?
+    config.recaptcha_enabled = false
 
     # Show/hide "Add to Google Calendar" button in the room page
-    config.enable_google_calendar_button = (ENV['ENABLE_GOOGLE_CALENDAR_BUTTON'] == "true")
+    config.enable_google_calendar_button = false
 
     # Enum containing the different possible registration methods
     config.registration_methods = { open: "0", invite: "1", approval: "2" }
 
-    config.google_analytics = ENV["GOOGLE_ANALYTICS_TRACKING_ID"].present?
+    config.google_analytics = false
 
     # Will always be true unless explicitly set to false
     config.enable_cache = ENV["ENABLE_CACHED_PROVIDER"] != "false"
@@ -131,16 +131,16 @@ module Greenlight
     # DEFAULTS
 
     # Default branding image if the user does not specify one
-    config.branding_image_default = "https://raw.githubusercontent.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
+    config.branding_image_default = "logo.png"
 
     # Default primary color if the user does not specify one
-    config.primary_color_default = "#467fcf"
+    config.primary_color_default = "#dc0067"
 
     # Default primary color lighten if the user does not specify one
-    config.primary_color_lighten_default = "#e8eff9"
+    config.primary_color_lighten_default = "#ffb400"
 
     # Default primary color darken if the user does not specify one
-    config.primary_color_darken_default = "#316cbe"
+    config.primary_color_darken_default = "#009ee0"
 
     # Default registration method if the user does not specify one
     config.registration_method_default = if ENV["DEFAULT_REGISTRATION"] == "invite"

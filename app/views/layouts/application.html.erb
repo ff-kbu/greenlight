@@ -28,10 +28,9 @@
       </script>
     <% end %>
 
-    <title><%= t("bigbluebutton") %></title>
+    <title>Freifunk - <%= t("bigbluebutton") %></title>
     <meta property="og:title" content="<%= t("bigbluebutton", locale: :en) %>" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="<%= t("landing.about", href: "Greenlight", locale: :en) %>" />
     <meta property="og:url" content="<%= request.base_url %>" />
     <meta property="og:image" content="<%= logo_image %>" />
 
@@ -82,8 +81,8 @@
       <% end %>
 
       <%= render 'shared/flash_messages' unless flash.empty? %>
-
       <%= yield %>
+
     </div>
 
     <%= render "shared/footer" %>
