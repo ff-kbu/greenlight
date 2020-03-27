@@ -66,11 +66,11 @@
 }
 
 #create-room-block {
-  border: 1px dashed lightgray;
+  border: 1px dashed $light-gray;
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: $create-room-block-hover-background;
   }
 }
 
@@ -93,12 +93,12 @@
 }
 
 .bootstrap-select .dropdown-menu li.active small.text-muted{
-  color: #9aa0ac !important
+  color: $other-bootstrap-select-grey !important
 }
 
 .not-saved {
   color: grey;
-  background: rgba(0, 40, 100, 0.12);
+  background: $translucent-blue-gray;
 }
 
 .dropdown-menu.show {

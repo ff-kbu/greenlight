@@ -17,8 +17,34 @@
 // Declare all variables here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$freifunk-magenta: #dc0067;
+$freifunk-blue: #009ee0;
+$freifunk-yellow: #ffb400;
+$button-color-blue: $freifunk-magenta;
+$force-text-normal-color: #495057;
+
+$error-background-color: lightgray;
+$light-gray: lightgray;
+$mid-gray: lightgray;
+$form-disabled-gray: lightgray;
+$other-bootstrap-select-grey: #9aa0ac;
+$signin-button-gray: #888;
+$signin-text-gray: #444;
+$sort-disabled-color: rgba(110, 118, 135,1);
+
 $background-color: #F5F7FB;
-$error-background-color: #EFE6E6;
-$button-color-blue: #467FCF;
+$create-room-block-hover-background: rgba(0, 0, 0, 0.04);
+$transparent-gray: rgba(0,0,0,.25);
+$translucent-blue-gray: rgba(0,158,224, 0.12);
+$transparent-blue: rgba(0,158,224,.3);
+
 $header-height: 65px;
 $footer-height: 65px;
+$google-button-blue: $freifunk-blue;
+$twitter-button-blue: $freifunk-blue;
+$office356-button-red: $freifunk-blue;
+$ms-button-blue: $freifunk-blue;
+$ldap-button-red: $freifunk-magenta;
+
+$cookies-agree-button-background: $freifunk-yellow;
+$tag-color: white;
