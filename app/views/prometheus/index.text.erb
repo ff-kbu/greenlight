@@ -1,0 +1,21 @@
+# HELP user_totals The number of active users in all meetings
+# TYPE user_totals gauge
+users_num{method="total"} <%= @totals[:total] %>
+users_num{method="phone"} <%= @totals[:phone] %>
+users_num{method="video"} <%= @totals[:video] %>
+
+# HELP user_biggest The number of active users in the biggest meeting
+# TYPE user_biggest gauge
+user_biggest{method="total"} <%= @biggest[:total] %>
+user_biggest{method="phone"} <%= @biggest[:phone] %>
+user_biggest{method="video"} <%= @biggest[:video] %>
+
+# HELP rooms_num The number of active rooms
+# TYPE rooms_num gauge
+rooms_num{method="total"} <%= @meeting_count %>
+
+# HELP greenlight_objects Registered objects in greenlight
+# TYPE greenlight_objects gauge
+greenlight_objects{method="users"} <%= @greenlight[:users] %>
+greenlight_objects{method="rooms"} <%= @greenlight[:rooms] %>
+

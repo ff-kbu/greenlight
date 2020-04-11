@@ -17,6 +17,11 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
 Rails.application.routes.draw do
+  scope '/metrics' do
+    get '/', to: 'prometheus#index'
+    get '/room_status', to: 'prometheus#room_status'
+  end
+
   get '/health_check', to: 'health_check#all'
 
   # Error routes.
