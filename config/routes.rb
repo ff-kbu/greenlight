@@ -17,7 +17,7 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
 Rails.application.routes.draw do
-  get '/prometheus', to: 'prometheus#index'
+  get '/metrics', to: 'prometheus#index'
 
   get '/health_check', to: 'health_check#all'
 
