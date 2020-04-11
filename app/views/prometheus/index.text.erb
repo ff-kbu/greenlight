@@ -1,0 +1,10 @@
+# HELP users_num The number of active users
+# TYPE users_num gauge
+users_num{method="total"} <%= @meeting_attendees.sum %>
+users_num{method="biggest_room"} <%= @meeting_attendees.max %>
+users_num{method="room_avg"} <%= @meeting_attendees.sum.to_f / @meeting_attendees.size %>
+
+# HELP rooms_num The number of active rooms
+# TYPE rooms_num gauge
+rooms_num{method="total"} <%= @meeting_attendees.size %>
+
