@@ -1,0 +1,6 @@
+# HELP users_in_room The number of active users per room
+# TYPE users_in_room
+<%- @users_in_room.each do |k,v| %>
+users_in_room{method="<%= k %>"} <%= v %>
+<%- end %>
+
